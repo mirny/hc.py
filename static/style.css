@@ -1,0 +1,32 @@
+html {
+color: #78291F;
+background-color: #F3C450;
+}
+
+body {
+font-family: "Lucida Grande", lucida, verdana, geneva, sans-serif;
+}
+
+.even {
+background-color: #E6E371;
+}
+
+#filebox {
+margin: 1em;
+border:1px solid #3B323E;
+}
+
+#filebox td {
+padding: 0.1em 0.5em;
+border:1px solid #3B323E;
+} 
+
+#filebox thead,tfoot td {
+color:#E6E371;
+background-color:#78291F;
+font-weight:bold;
+}
+
+#filebox tfoot td {
+text-align:right;
+}

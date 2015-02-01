@@ -1,0 +1,35 @@
+$def with (table)
+<html>
+ <head>
+  <title>$table.netloc</title>
+  <link rel="stylesheet" type="text/css" href="/reset-fonts-grids.css" />
+  <link rel="stylesheet" type="text/css" href="/style.css" />
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+ </head>
+ <body>
+  <table id="filebox">
+   <thead>
+    <tr>
+     <td colspan=3>$table.title</td>
+    </tr>
+   </thead>
+   <tfoot>
+    <tr>
+     <td colspan=3>
+      $table.dirscount&nbsp;folders,&nbsp;
+      $table.filescount&nbsp;files&nbsp;($table.sum_fsize)&nbsp;total
+     </td>
+    </tr>
+   </tfoot>
+   <tbody>
+    $for url, fname, fsize, ftime in table.rows:
+        <tr class="$loop.parity">
+         <td><a href="$url">$fname</a></td>
+         <td align="right">$fsize</td>
+         <td>$ftime</td>
+        </tr>
+   </tbody>
+  </table>
+ </body>
+</html>
+
