@@ -2,9 +2,10 @@
 HandyCache cache browser.
 
 It uses http://webpy.org/
+
 You can install it by running:
 ```
-sudo easy_install web.py
+easy_install web.py
 ```
 
 Also add the following rules to Redirect list:
